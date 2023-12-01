@@ -2,26 +2,75 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+html {
+  scroll-behavior: smooth;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+::-webkit-scrollbar {
+  @apply w-[15px] h-[15px];
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-mainText rounded-lg;
+  border: 5px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-mainBg;
+}
+
+.case {
+  @apply mx-auto max-w-screen-xl px-6 sm:px-8 lg:px-10;
+}
+
+.scroll-btn {
+  @apply block relative h-11 w-7 border-[2px] border-mainText rounded-full;
+}
+
+.scroll-btn:before {
+  @apply absolute content-[""] m-auto left-0 right-0 top-2 h-2 w-2 bg-mainText rounded-full;
+  animation: move-down 2s infinite;
+}
+
+@keyframes move-down {
+  80% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(16px);
+    opacity: 0;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.sectionTitle {
+  @apply text-center font-medium sm:text-4xl text-2xl;
+}
+
+.swiper-pagination-bullet-active {
+  @apply !bg-white !shadow-lg;
+}
+
+.swiper-button-prev {
+  @apply !hidden;
+}
+
+.swiper-button-next {
+  @apply !hidden;
+}
+
+.hoverLink {
+  @apply text-mainBg/50 group-hover:text-mainBg transition-colors duration-300 font-medium;
+}
+
+.hoverLinkFooter {
+  @apply text-mainText/50 group-hover:text-mainText transition-colors duration-300 font-medium;
+}
+
+.hoverLinkDot {
+  @apply opacity-0 scale-0 group-hover:opacity-100 group-hover:bg-mainBg group-hover:scale-100 transform transition-all duration-300 ease-out absolute bottom-0 left-1/2 -translate-x-1/2 top-5 h-[5px] w-[5px] bg-mainBg/50 rounded-full;
+}
+
+.hoverLinkDotFooter {
+  @apply opacity-0 scale-0 group-hover:opacity-100 group-hover:bg-mainText group-hover:scale-100 transform transition-all duration-300 ease-out absolute bottom-0 left-1/2 -translate-x-1/2 top-5 h-[5px] w-[5px] bg-mainText/50 rounded-full;
 }
