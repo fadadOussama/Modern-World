@@ -16,7 +16,7 @@ export default function TestimonialSection() {
   };
 
   return (
-    <div className="case mt-20" id="TestimonialSection">
+    <div className="case mt-20" id="testimonialSection">
       <div>
         <motion.div ref={refTitle} animate={isTitleInView ? "show" : "hidden"} variants={FADE_DOWN_ANIMATION_VARIANTS}>
           <motion.h1 className={`sectionTitle font-secondFont`}>Clients Glittering Testimonials</motion.h1>
