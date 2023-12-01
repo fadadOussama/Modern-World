@@ -17,17 +17,17 @@ export default function HeaderMobile() {
 
         <div className="flex flex-col gap-y-4 mt-8 pb-5">
           <SheetTrigger asChild>
-            <a href="#ArchitecturesSection" className={`text-base text-mainText/60 font-medium text-center`}>
+            <a href="#architectures" className={`text-base text-mainText/60 font-medium text-center`}>
               Architectures
             </a>
           </SheetTrigger>
           <SheetTrigger asChild>
-            <a href="#buildingsSection" className={`text-base text-mainText/60 font-medium text-center`}>
+            <a href="#buildings" className={`text-base text-mainText/60 font-medium text-center`}>
               Buildings
             </a>
           </SheetTrigger>
           <SheetTrigger asChild>
-            <a href="#TestimonialSection" className={`text-base text-mainText/60 font-medium text-center`}>
+            <a href="#testimonials" className={`text-base text-mainText/60 font-medium text-center`}>
               Testimonials
             </a>
           </SheetTrigger>

@@ -7,7 +7,7 @@ export default function Header() {
       <div className="mx-auto max-w-lg px-4 sm:px-6 lg:px-8 rounded-[128px] bg-mainText">
         <div className="flex h-16 items-center justify-between">
           <div>
-            <a className="block" href="#heroSection">
+            <a className="block" href="#home">
               <span className="sr-only">Home</span>
               <Image src="/iconHome.svg" alt="icon" width={40} height={40} sizes="100vw" />
             </a>
@@ -17,7 +17,7 @@ export default function Header() {
             <nav>
               <ul className="flex items-center gap-6 text-sm">
                 <li className="relative group">
-                  <a className="hoverLink" href="#ArchitecturesSection">
+                  <a className="hoverLink" href="#architectures">
                     Architectures
                   </a>
 
@@ -25,7 +25,7 @@ export default function Header() {
                 </li>
 
                 <li className="relative group">
-                  <a className="hoverLink" href="#buildingsSection">
+                  <a className="hoverLink" href="#buildings">
                     Buildings
                   </a>
 
@@ -33,8 +33,8 @@ export default function Header() {
                 </li>
 
                 <li className="relative group">
-                  <a className="hoverLink" href="#TestimonialSection">
-                    Testimonial
+                  <a className="hoverLink" href="#testimonials">
+                    Testimonials
                   </a>
 
                   <span className="hoverLinkDot"></span>

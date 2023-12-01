@@ -27,7 +27,7 @@ export default function ArchitecturesSection() {
   };
 
   return (
-    <div className="case mt-20" id="ArchitecturesSection">
+    <div className="case mt-20" id="architectures">
       <div>
         <motion.div ref={refTitle} animate={isTitleInView ? "show" : "hidden"} variants={FADE_DOWN_ANIMATION_VARIANTS}>
           <motion.h1 className={`sectionTitle font-secondFont`}>Discover modern architectures</motion.h1>

@@ -14,7 +14,7 @@ export default function Hero() {
   };
 
   return (
-    <div className="bg-hero bg-cover w-screen h-screen bg-bottom flex justify-center items-center" id="heroSection">
+    <div className="bg-hero bg-cover w-screen h-screen bg-bottom flex justify-center items-center" id="home">
       <div className="px-6 lg:mb-20">
         <motion.div
           initial="hidden"
@@ -42,7 +42,7 @@ export default function Hero() {
           </motion.p>
 
           <motion.div ref={ref} className="mx-auto w-fit" variants={FADE_DOWN_ANIMATION_VARIANTS}>
-            <a href="#ArchitecturesSection" className="scroll-btn"></a>
+            <a href="#architectures" className="scroll-btn"></a>
           </motion.div>
         </motion.div>
       </div>

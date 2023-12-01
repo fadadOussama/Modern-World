@@ -33,7 +33,7 @@ export default function BuildingsSection() {
   };
 
   return (
-    <div className="bg-secondBg mt-20" id="buildingsSection">
+    <div className="bg-secondBg mt-20" id="buildings">
       <div className="case pt-12 pb-8 relative">
         <motion.div
           ref={refTitle}

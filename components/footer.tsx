@@ -23,7 +23,7 @@ export default function FooterSection() {
           className="flex md:flex-row flex-col justify-between items-center gap-y-4"
         >
           <div className="flex items-center gap-2">
-            <a className="block" href="#heroSection">
+            <a className="block" href="#home">
               <span className="sr-only">Home</span>
               <Image src="/iconFooter.svg" alt="icon" width={30} height={30} sizes="100vw" />
             </a>
@@ -35,22 +35,22 @@ export default function FooterSection() {
 
           <ul className="flex items-center gap-6 text-sm">
             <li className="relative group">
-              <a className="hoverLinkFooter" href="#ArchitecturesSection">
+              <a className="hoverLinkFooter" href="#architectures">
                 Architectures
               </a>
               <span className="hoverLinkDotFooter"></span>
             </li>
 
             <li className="relative group">
-              <a className="hoverLinkFooter" href="#buildingsSection">
+              <a className="hoverLinkFooter" href="#buildings">
                 Buildings
               </a>
               <span className="hoverLinkDotFooter"></span>
             </li>
 
             <li className="relative group">
-              <a className="hoverLinkFooter" href="#TestimonialSection">
-                Testimonial
+              <a className="hoverLinkFooter" href="#testimonials">
+                Testimonials
               </a>
               <span className="hoverLinkDotFooter"></span>
             </li>
