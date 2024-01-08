@@ -4,6 +4,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "./globals.css";
+import CustomCursor from "@/components/Cursor/customCursor";
 
 const mainFont = localFont({
   src: [
@@ -55,7 +56,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`scroll-smooth scroll-pt-[136px] ${secondFont.variable}`}>
-      <body className={`${mainFont.className}`}>{children}</body>
+      <body className={`${mainFont.className}`}>
+        <CustomCursor />
+        {children}
+      </body>
     </html>
   );
 }

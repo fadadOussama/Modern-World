@@ -11,6 +11,8 @@ import b5 from "../public/b5.jpg";
 import b6 from "../public/b6.jpg";
 import b7 from "../public/b7.jpg";
 import b8 from "../public/b8.jpg";
+import b9 from "../public/b9.jpg";
+import b10 from "../public/b10.jpg";
 
 import Image from "next/image";
 import SwiperNavButtons from "./buildingsComps/swiperNavButtons";
@@ -204,6 +206,42 @@ export default function BuildingsSection() {
                 </div>
               </div>
             </SwiperSlide>
+
+            <SwiperSlide>
+              <Image
+                src={b9}
+                alt="architecture hero"
+                priority
+                placeholder="blur"
+                className="h-[400px] object-cover"
+                sizes="(min-width: 640px) 50vw , 0vw"
+              />
+
+              <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black  h-[150px] text-white flex flex-col justify-end">
+                <div className="p-5">
+                  <p className="font-medium text-[22px]">Luxuria Apartments</p>
+                  <p className="text-[15px] font-light">Frankfurt, Germany</p>
+                </div>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <Image
+                src={b10}
+                alt="architecture hero"
+                priority
+                placeholder="blur"
+                className="h-[400px] object-cover"
+                sizes="(min-width: 640px) 50vw , 0vw"
+              />
+
+              <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black  h-[150px] text-white flex flex-col justify-end">
+                <div className="p-5">
+                  <p className="font-medium text-[22px]">Triangle House</p>
+                  <p className="text-[15px] font-light">Mumbai, India</p>
+                </div>
+              </div>
+            </SwiperSlide>
           </Swiper>
         </motion.div>
 
@@ -213,10 +251,17 @@ export default function BuildingsSection() {
           variants={FADE_DOWN_ANIMATION_VARIANTS}
           className="block sm:hidden"
         >
-          <Swiper slidesPerView={1} spaceBetween={30} grabCursor={true} loop={true} navigation={true} modules={[Navigation]} className="mySwiper">
-            <div className="mx-auto w-fit mt-5">
-              <SwiperNavButtons />
-            </div>
+          <Swiper
+            slidesPerView={1}
+            centeredSlides={true}
+            spaceBetween={30}
+            grabCursor={true}
+            loop={true}
+            navigation={true}
+            modules={[Navigation]}
+            className="mySwiper"
+          >
+            <SwiperNavButtons />
 
             <SwiperSlide>
               <Image
@@ -358,6 +403,42 @@ export default function BuildingsSection() {
                 <div className="p-5">
                   <p className="font-medium text-[22px]">Solaris Spire</p>
                   <p className="text-[15px] font-light">Paris, France</p>
+                </div>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <Image
+                src={b9}
+                alt="architecture hero"
+                priority
+                placeholder="blur"
+                className="h-[400px] object-cover"
+                sizes="(max-width: 640px) 97vw , 0vw"
+              />
+
+              <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black  h-[150px] text-white flex flex-col justify-end">
+                <div className="p-5">
+                  <p className="font-medium text-[22px]">Luxuria Apartments</p>
+                  <p className="text-[15px] font-light">Frankfurt, Germany</p>
+                </div>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <Image
+                src={b10}
+                alt="architecture hero"
+                priority
+                placeholder="blur"
+                className="h-[400px] object-cover"
+                sizes="(max-width: 640px) 97vw , 0vw"
+              />
+
+              <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black  h-[150px] text-white flex flex-col justify-end">
+                <div className="p-5">
+                  <p className="font-medium text-[22px]">Triangle House</p>
+                  <p className="text-[15px] font-light">Mumbai, India</p>
                 </div>
               </div>
             </SwiperSlide>

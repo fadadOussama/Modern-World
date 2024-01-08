@@ -74,3 +74,9 @@ html {
 .hoverLinkDotFooter {
   @apply opacity-0 scale-0 group-hover:opacity-100 group-hover:bg-mainText group-hover:scale-100 transform transition-all duration-300 ease-out absolute bottom-0 left-1/2 -translate-x-1/2 top-5 h-[5px] w-[5px] bg-mainText/50 rounded-full;
 }
+
+@media (hover: none) and (pointer: coarse) {
+  .cursor {
+    @apply hidden;
+  }
+}
